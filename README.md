@@ -12,7 +12,8 @@
   Jupyter Notebook: Used for interactive development and documentation.
 
 * [Conclusions]
-   Findings :- Achieved significant improvements in model accuracy after data augmentation.
+
+  Findings :- Achieved significant improvements in model accuracy after data augmentation.
 
   Effectively addressed class imbalances to enhance the model's performance across  all skin conditions.
  
@@ -30,103 +31,72 @@ Collaborate with dermatologists for validation and refinement of the model in cl
 
 ## General Information 
 
-#Step 1: Data Reading/Data Understanding 
-
+# Step 1: Data Reading/Data Understanding 
 ## Verify TensorFlow installation
-
 ## Define paths for train and test images
-
 ## Define paths for train and test images
-
 ## Verify the paths
 
 # Step 2: Dataset Creation 
-
 ## Define image size and batch size
-
 ## Create an ImageDataGenerator for the training and validation datasets
-
 ## Create training dataset
-
 ## Create validation dataset
 
 # Step 3: Dataset Visualization
-
 ## Function to plot images
-
 ## Get one batch of images and labels
-
 ## Debugging: print the shape and content of the labels array
-
 ## Map integer labels to class names
-
 ## Get one image per class
-
 ## Plot images if we found at least one image per class
 
 # Step 4: Model Building & Training (First Phase )We'll create a custom CNN model, compile it, and train it on the dataset.
-
 ## Define the CNN model
-
 ## Compile the model
-
 ## Print the model summary
-
 ## Model Training 
 
 # Step 5: Evaluation  of first Phase  Performance of Model After training, we will plot the training and validation accuracy and loss to evaluate the model's performance and check for overfitting or underfitting.
-
 ## Plot training & validation accuracy and loss
 
 # Step 6: Data Augmentation Strategy If there is evidence of overfitting or underfitting, we will apply data augmentation to improve the model.
-
 ## Create an ImageDataGenerator with data augmentation for the training dataset
-
 ## Create training dataset with augmentation
 
 # Step 7:  Re-train the model with augmented data (Second Phase with Augumentation)
 
 # Step 8: Evaluate model performance again (Evaluation of Second Phase)
 
-# Step 7: Handling Class Imbalances
-
+# Step 9: Handling Class Imbalances
 ## Re-create Datasets with Augmented Images
-
 ## Re-create Image Data Generators
-
 ### Create an ImageDataGenerator for the augmented training dataset
-
 ###  Create augmented training dataset
-
 ###  Create validation dataset
-
 ## Re-Train the Model :- Now, re-train the  model using the augmented datasets.
-
 ### Train the model on augmented data
 
-# Step 8 : Evaluate Model Performance -After training on the augmented dataset, evaluate the model's performance to see if augmentation helped reduce overfitting or improve performance.
-
+# Step 10 : Evaluate Model Performance -After training on the augmented dataset, evaluate the model's performance to see if augmentation helped reduce overfitting or improve performance.
 ## Plot training & validation accuracy and loss after augmentation
 
-# Step 9: Class Distribution Analysis :- as imbalances can affect the model's performance. Let's analyze the class distribution:
-
+# Step 11: Class Distribution Analysis :- as imbalances can affect the model's performance. Let's analyze the class distribution:
 ##  Define the directory for your training data
-
 ## Plot the class distribution
 
-# Step 10 : Class Weighting in Model Compilation ((Handling Class Imbalances)
-
+# Step 12 : Class Weighting in Model Compilation ((Handling Class Imbalances)
 ##  Compute class weights to handle imbalances
-
 ## Convert to dictionary format
-
 ## Compile the model with class weights
 
 # Step 11: Evaluation of Final Model
 
-# Step 12: Conclusion - The objective of this project was to develop a convolutional neural network (CNN) model capable of accurately detecting melanoma from skin images. We employed a custom CNN architecture and experimented with data augmentation techniques to enhance model generalization. Key findings include significant improvements in model performance after augmenting the training dataset and effectively handling class imbalances using class weighting. Despite challenges in balancing the dataset, our approach resulted in a robust model capable of distinguishing between various skin conditions."
+# Step 12: Conclusion -
+
+The objective of this project was to develop a convolutional neural network (CNN) model capable of accurately detecting melanoma from skin images. We employed a custom CNN architecture and experimented with data augmentation techniques to enhance model generalization. Key findings include significant improvements in model performance after augmenting the training dataset and effectively handling class imbalances using class weighting. Despite challenges in balancing the dataset, our approach resulted in a robust model capable of distinguishing between various skin conditions."
 
 Results:
+
 Model Performance Metrics:
 
 Test Accuracy: 85%
